@@ -1,0 +1,56 @@
+---
+whiskers:
+  version: ^2.0.0
+  filename: "evergarden/color.ini"
+---
+## name: evergarden
+## author: comfysage
+## license: GPL-3.0
+## blurb: a comfy colorscheme for cozy morning coding
+{% for id, flavor in flavors %}
+[{{id}}]
+text               = {{flavor.colors.subtext1.hex}}
+subtext            = {{flavor.colors.subtext0.hex}}
+main               = {{flavor.colors.base.hex}}
+main-elevated      = {{flavor.colors.surface0.hex}}
+highlight          = {{flavor.colors.surface0.hex}}
+highlight-elevated = {{flavor.colors.surface1.hex}}
+sidebar            = {{flavor.colors.mantle.hex}}
+player             = {{flavor.colors.crust.hex}}
+card               = {{flavor.colors.surface0.hex}}
+shadow             = {{flavor.colors.crust.hex}}
+selected-row       = {{flavor.colors.overlay2.hex}}
+button             = {{flavor.colors.overlay0.hex}}
+button-active      = {{flavor.colors.subtext0.hex}}
+button-disabled    = {{flavor.colors.surface2.hex}}
+tab-active         = {{flavor.colors.surface0.hex}}
+notification       = {{flavor.colors.surface0.hex}}
+notification-error = {{flavor.colors.red.hex}}
+equalizer          = {{flavor.colors.crust.hex}}
+misc               = {{flavor.colors.surface1.hex}}
+
+crust    = {{flavor.colors.crust.hex}}
+mantle   = {{flavor.colors.mantle.hex}}
+base     = {{flavor.colors.base.hex}}
+surface0 = {{flavor.colors.surface0.hex}}
+surface1 = {{flavor.colors.surface1.hex}}
+surface2 = {{flavor.colors.surface2.hex}}
+overlay0 = {{flavor.colors.overlay0.hex}}
+overlay1 = {{flavor.colors.overlay1.hex}}
+overlay2 = {{flavor.colors.overlay2.hex}}
+subtext0 = {{flavor.colors.subtext0.hex}}
+subtext1 = {{flavor.colors.subtext1.hex}}
+text     = {{flavor.colors.text.hex}}
+red      = {{flavor.colors.red.hex}}
+orange   = {{flavor.colors.orange.hex}}
+yellow   = {{flavor.colors.yellow.hex}}
+lime     = 000000
+green    = {{flavor.colors.green.hex}}
+aqua     = {{flavor.colors.aqua.hex}}
+skye     = {{flavor.colors.skye.hex}}
+snow     = 000000
+blue     = {{flavor.colors.blue.hex}}
+purple   = {{flavor.colors.purple.hex}}
+pink     = {{flavor.colors.pink.hex}}
+cherry   = 000000
+{% endfor %}
